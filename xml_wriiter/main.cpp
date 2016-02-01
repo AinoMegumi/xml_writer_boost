@@ -1,8 +1,8 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include"xml_writer.h"
 
 int main() {
-	xml_writer xml = xml_writer("test.xml", "root");
-	xml.xml_write_string_data("child", "‚ ‚¢‚¤‚¦‚¨", 4);
+	xml_writer xml = xml_writer("test.xml", u8"root");
+	xml.xml_write_string_data(u8"child", u8"ã‚ã‚ŠããŸã‚Šãªä¸–ç•Œâ™¡", 4);
 	return 0;
 }
