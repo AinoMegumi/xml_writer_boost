@@ -14,5 +14,5 @@ void xml_writer::xml_write_string_data(const std::string child, const std::strin
 	auto& children = rt.add(child, "");
 	this->write_text_in_node(children, "test1", data);
 	this->write_int_in_node(children, "test2", idata);
-	boost::property_tree::write_xml(this->filepath, pt, std::locale(), boost::property_tree::xml_writer_make_settings<std::string>(' ', 2));
+	write_xml(this->filepath, pt);
 }
